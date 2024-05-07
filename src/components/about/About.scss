@@ -1,0 +1,19 @@
+.about {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  //   background-color: red;
+  padding-block: 2rem;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  .wrapper {
+    margin: auto;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 25px;
+  }
+}

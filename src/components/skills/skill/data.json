@@ -1,0 +1,66 @@
+[
+  {
+    "title": "React JS",
+    "img": "/skills/react.svg"
+  },
+  {
+    "title": "Typescript",
+    "img": "/skills/typescript.svg"
+  },
+  {
+    "title": "Javascript",
+    "img": "/skills/javascript.svg"
+  },
+  {
+    "title": "Node.js",
+    "img": "/skills/node.svg"
+  },
+  {
+    "title": "Sass",
+    "img": "/skills/sass.svg"
+  },
+  {
+    "title": "Framer Motion",
+    "img": "/skills/css.svg"
+  },
+  {
+    "title": "Styled Components",
+    "img": "/skills/css.svg"
+  },
+  {
+    "title": "HTML",
+    "img": "/skills/html.svg"
+  },
+  {
+    "title": "CSS",
+    "img": "/skills/css.svg"
+  },
+  {
+    "title": "REST_API",
+    "img": "/skills/css.svg"
+  },
+  {
+    "title": "Git",
+    "img": "/skills/git.svg"
+  },
+  {
+    "title": "GitHub",
+    "img": "/skills/github.svg"
+  },
+  {
+    "title": "GitLab",
+    "img": "/skills/gitlab.svg"
+  },
+  {
+    "title": "S3 AWS",
+    "img": "/skills/css.svg"
+  },
+  {
+    "title": "CloudFront AWS",
+    "img": "/skills/css.svg"
+  },
+  {
+    "title": "Route 53 AWS",
+    "img": "/skills/css.svg"
+  }
+]

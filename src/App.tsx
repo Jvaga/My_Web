@@ -1,19 +1,37 @@
 import "./App.scss";
+import About from "./components/about/About";
+import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
+import Parallax from "./components/parallax/Parallax";
+import Portfolio from "./components/portfolio/Portfolio";
+import Skills from "./components/skills/Skills";
 
 function App() {
   return (
     <>
-      <section id="Homepage">
+      <section className="section" id="Homepage">
         <Navbar />
+        <Hero />
       </section>
-      <section id="Services">parallax</section>
-      <section>Services</section>
-      <section id="Portfolio">parallax</section>
-      <section>porfolio 1</section>
-      <section>porfolio 2</section>
-      <section>porfolio 3</section>
-      <section id="Contact">contact</section>
+      <section className="section" id="Services">
+        <Parallax type={"services"} />
+      </section>
+      <section className="section">
+        <About />
+      </section>
+      <section className="section" id="Skills">
+        <Parallax type={"Skills"} />
+      </section>
+      <section className="section">
+        <Skills />
+      </section>
+      <section className="section" id="Portfolio">
+        <Parallax type={"portfolio"} />
+      </section>
+      <Portfolio />
+      <section className="section" id="Contact">
+        contact
+      </section>
     </>
   );
 }

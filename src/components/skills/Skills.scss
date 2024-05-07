@@ -1,0 +1,14 @@
+.skills {
+  width: 80%;
+  margin: auto;
+  padding-block: 3rem;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
