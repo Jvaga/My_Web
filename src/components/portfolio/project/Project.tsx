@@ -18,9 +18,8 @@ const Project = (props: ProjectProps) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section ref={ref}>
+    <section className="project" ref={ref}>
       <div className="container">
-        
         <img src={props.img} alt="" />
         <motion.div className="textContainer" style={{ y: y }}>
           <h2>{props.title}</h2>

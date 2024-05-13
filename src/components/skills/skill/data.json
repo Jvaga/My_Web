@@ -21,11 +21,11 @@
   },
   {
     "title": "Framer Motion",
-    "img": "/skills/css.svg"
+    "img": "/skills/framer-motion.svg"
   },
   {
     "title": "Styled Components",
-    "img": "/skills/css.svg"
+    "img": "/skills/styled-components.svg"
   },
   {
     "title": "HTML",
@@ -37,7 +37,7 @@
   },
   {
     "title": "REST_API",
-    "img": "/skills/css.svg"
+    "img": "/skills/api-rest.svg"
   },
   {
     "title": "Git",
@@ -53,14 +53,14 @@
   },
   {
     "title": "S3 AWS",
-    "img": "/skills/css.svg"
+    "img": "/skills/aws.svg"
   },
   {
     "title": "CloudFront AWS",
-    "img": "/skills/css.svg"
+    "img": "/skills/aws.svg"
   },
   {
     "title": "Route 53 AWS",
-    "img": "/skills/css.svg"
+    "img": "/skills/aws.svg"
   }
 ]

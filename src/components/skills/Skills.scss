@@ -1,12 +1,14 @@
 .skills {
   width: 80%;
+  height: 100%;
   margin: auto;
   padding-block: 3rem;
+  color: #112d4e;
 
-  .wrapper {
+  .skills-wrapper {
     width: 100%;
     display: flex;
-    row-gap: 25px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

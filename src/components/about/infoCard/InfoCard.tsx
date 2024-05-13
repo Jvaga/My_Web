@@ -7,6 +7,22 @@ interface InfoCardProps {
   text: string;
 }
 
+const variants = {
+  initial: {
+    x: 50,
+
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 const InfoCard = (props: InfoCardProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -21,16 +37,16 @@ const InfoCard = (props: InfoCardProps) => {
     <motion.div
       className="infoCard"
       ref={ref}
-      variants={{ start: { opacity: 0, y: 75 }, end: { opacity: 1, y: 0 } }}
-      initial="start"
-      animate={mainControls}
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
       transition={{ duration: 0.5, delay: 0.25 }}
     >
-      {" "}
-      <div className="wrapper">
+      <div className="infoCard__wrapper">
+        <img src="/box.png" alt="" />
         <h1>{props.title}</h1>
         <p>{props.text}</p>
-      </div>{" "}
+      </div>
     </motion.div>
   );
 };

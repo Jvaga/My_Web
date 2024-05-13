@@ -1,8 +1,7 @@
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: linear-gradient(180deg, #0c1d12, #111132);
-  color: white;
+  background: #f6f5f5;
   position: relative;
 
   .wrapper {
@@ -16,27 +15,34 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+      position: relative;
+      z-index: 5;
 
       h2 {
         font-size: 30px;
-        color: rebeccapurple;
+        color: #3f72af;
         letter-spacing: 10px;
       }
 
       h1 {
         font-size: 70px;
+        color: #112d4e;
       }
 
       .buttons {
         button {
           padding: 20px;
-          border: solid white;
           border-radius: 10px;
-          background-color: transparent;
-          color: white;
+          color: black;
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(0, 0, 0, 0.3);
         }
       }
 
@@ -46,13 +52,15 @@
     }
 
     .slidingTextContainer {
+      z-index: 1;
       position: absolute;
       font-size: 50vh;
       bottom: -50px;
       white-space: nowrap;
-      color: #ffffff09;
+      color: #3f72af;
       width: 50%;
       font-weight: bold;
+      opacity: 0.2;
     }
   }
 
@@ -61,6 +69,7 @@
     position: absolute;
     bottom: 0;
     right: 50px;
+    z-index: 2;
     img {
       height: 100%;
     }

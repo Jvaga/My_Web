@@ -1,19 +1,63 @@
 .about {
-  width: 80%;
-  height: 100vh;
-  margin: auto;
-  //   background-color: red;
-  padding-block: 2rem;
-  overflow: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
   .wrapper {
-    margin: auto;
+    width: 80%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 25px;
+  #progress {
+    transform: rotate(-90deg);
+  }
+
+  circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+  }
+  #progress .indicator {
+    stroke: #dbe2ef;
+    height: 40px;
+  }
+  .bg {
+    stroke: #3f72af;
+
+    opacity: 1;
+    color: burlywood;
+    overflow: hidden;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    height: 450px;
+    overflow-x: scroll;
+    background-color: #dbe2ef;
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: 3F72AF;
+    -webkit-border-radius: 1ex;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3f72af;
+    -webkit-border-radius: 1ex;
+  }
+  li {
+    flex: 0 0 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
   }
 }

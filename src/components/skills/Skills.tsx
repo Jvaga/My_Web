@@ -5,35 +5,40 @@ import data from "./skill/data.json";
 
 const variants = {
   initial: {
-    x: -500,
+    x: 100,
     y: 100,
     opacity: 0,
   },
-  animate: {
+  animate: (i: number) => ({
     x: 0,
     y: 0,
     opacity: 1,
+
     transition: {
-      duration: 1,
-      staggerChildren: 0.1,
+      delay: 0.1 * i,
     },
-  },
+  }),
 };
 
 const Skills = () => {
   return (
-    <motion.div
-      className="skills"
-      variants={variants}
-      initial="initial"
-      whileInView="animate"
-    >
-      <div className="wrapper">
+    <div className="skills">
+      <motion.div className="skills-wrapper">
         {data.map((item, i) => (
-          <Skill key={i} title={item.title} img={item.img} />
+          <motion.div
+            key={i}
+            variants={variants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            custom={i}
+          >
+            {" "}
+            <Skill title={item.title} img={item.img} />
+          </motion.div>
         ))}
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
