@@ -1,42 +1,17 @@
 import "./KnowMe.scss";
 import { motion } from "framer-motion";
+import KnowMeHook from "../../hooks/KnowMeHook";
 
-const variantsTitle = {
-  hidden: {
-    opacity: 0,
-  },
-  reveal: (i: number) => ({
-    opacity: 1,
-    transition: { delay: 0.04 * i },
-  }),
-};
-
-const variants = {
-  initial: {
-    x: 200,
-    y: 200,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-};
 const title = "warum Sie mich kennenlernen sollten";
 
 const KnowMe = () => {
-  const aa = title.split("");
-  console.log(aa);
+  const text = title.split("");
+  const { variantsTitle, variants } = KnowMeHook();
 
   return (
-    <div className="parallax">
+    <div className="knowMe">
       <motion.h1>
-        {aa.map((item, i) => (
+        {text.map((item, i) => (
           <motion.span
             key={i}
             variants={variantsTitle}
@@ -51,7 +26,7 @@ const KnowMe = () => {
       </motion.h1>
 
       <motion.div
-        className="mountains"
+        className="img"
         variants={variants}
         initial="initial"
         whileInView="animate"

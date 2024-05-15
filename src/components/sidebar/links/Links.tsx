@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import "./Links.scss";
 
+interface ToggleButtonProps {
+  setOpen: React.Dispatch<boolean>;
+  variant: boolean;
+}
+
 const variants = {
   open: {
     transition: {
@@ -25,8 +30,8 @@ const itemsVariants = {
   },
 };
 
-const Links = () => {
-  const items = ["Homepage", "Services", "Skills", "Portfolio", "Contact"];
+const Links = (props: ToggleButtonProps) => {
+  const items = ["Homepage", "Über mich", "Kenntnisse", "Portfolio"];
 
   return (
     <motion.div className="links" variants={variants}>
@@ -37,6 +42,7 @@ const Links = () => {
           variants={itemsVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          onClick={() => props.setOpen(!props.variant)}
         >
           {item}
         </motion.a>

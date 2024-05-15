@@ -50,16 +50,6 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>Jhonny Vargas</motion.h2>
           <motion.h1 variants={textVariants}>Frontend Developer</motion.h1>
-          <div className="buttons">
-            <motion.button variants={textVariants}>See my Work</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-          </div>
-          <motion.img
-            src="/scroll-down.png"
-            alt=""
-            animate="scrollAnimation"
-            variants={textVariants}
-          />
         </motion.div>
         <motion.div
           className="slidingTextContainer"
@@ -69,10 +59,18 @@ const Hero = () => {
         >
           Front End Developer
         </motion.div>
+
         <div className="imageContainer">
           <img src="/jhonny.png" alt="" />
         </div>
       </div>
+      <motion.img
+        className="scroll"
+        src="/scroll-down.png"
+        alt=""
+        animate="scrollAnimation"
+        variants={textVariants}
+      />
     </div>
   );
 };

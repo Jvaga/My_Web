@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .skill {
   width: 150px;
   .wrapper {
@@ -8,13 +9,28 @@
     align-items: center;
 
     h1 {
-      font-size: 15px;
+      font-size: 20px;
       text-align: center;
+      padding-bottom: 1rem;
+      @include respond(tab-port) {
+        font-size: 25px;
+        padding-bottom: 2rem;
+      }
+      @include respond(phone) {
+        padding-bottom: 0.2rem;
+        font-size: 15px;
+      }
     }
 
     img {
       width: 80%;
       border-radius: 0.5rem;
+      @include respond(tab-port) {
+        width: 90%;
+      }
+      @include respond(phone) {
+        width: 35%;
+      }
     }
   }
 }

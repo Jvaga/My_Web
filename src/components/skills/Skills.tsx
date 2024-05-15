@@ -2,25 +2,10 @@ import { motion } from "framer-motion";
 import "./Skills.scss";
 import Skill from "./skill/Skill";
 import data from "./skill/data.json";
-
-const variants = {
-  initial: {
-    x: 100,
-    y: 100,
-    opacity: 0,
-  },
-  animate: (i: number) => ({
-    x: 0,
-    y: 0,
-    opacity: 1,
-
-    transition: {
-      delay: 0.1 * i,
-    },
-  }),
-};
+import SkillsHook from "../../hooks/SkillsHook";
 
 const Skills = () => {
+  const { variants } = SkillsHook();
   return (
     <div className="skills">
       <motion.div className="skills-wrapper">

@@ -63,7 +63,7 @@ const MyWork = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        my work
+        Entdecken Sie meine Arbeit
       </motion.h1>
 
       <motion.div

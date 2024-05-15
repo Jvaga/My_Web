@@ -1,3 +1,5 @@
+@import "../../../styles/mixins.scss";
+
 .project {
   .container {
     display: flex;
@@ -5,15 +7,95 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    background-color: #112d4e;
 
-    img {
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    .img-container {
       flex: 1;
-      height: 50%;
-      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      @include respond(tab-port) {
+        margin-top: 20%;
+        height: 50%;
+      }
+      @include respond(phone) {
+        height: 20%;
+        justify-content: center;
+        align-items: end;
+      }
+
+      img {
+        height: 40%;
+        width: 80%;
+        object-fit: cover;
+        margin: auto;
+        border-radius: 0.5rem;
+
+        @include respond(tab-port) {
+          width: 90%;
+          height: 90%;
+        }
+
+        @include respond(phone) {
+          height: 60%;
+          width: 90%;
+          margin: 0;
+        }
+      }
     }
 
     .textContainer {
       flex: 1;
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
+      .text-wrapper {
+        width: 400px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @include respond(tab-port) {
+          font-size: 30px;
+          width: 90%;
+          margin: auto;
+        }
+
+        @include respond(phone) {
+          font-size: 1rem;
+          width: 90%;
+          margin: auto;
+        }
+
+        p {
+          text-align: justify;
+          @include respond(phone) {
+            margin-bottom: 2rem;
+          }
+        }
+
+        button {
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          @include respond(tab-port) {
+            padding: 1rem;
+            font-size: 1rem;
+          }
+
+          @include respond(phone) {
+            padding: 0.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 }

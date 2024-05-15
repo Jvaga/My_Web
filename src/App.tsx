@@ -28,13 +28,9 @@ function App() {
         <Skills />
       </section>
       <section className="section" id="Portfolio">
-        {/* <Parallax type={"portfolio"} /> */}
         <MyWork />
       </section>
       <Portfolio />
-      <section className="section" id="Contact">
-        contact
-      </section>
     </>
   );
 }

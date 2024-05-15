@@ -1,6 +1,7 @@
 import "./Project.scss";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+
+import ProjectHook from "../../../hooks/ProjectHook";
 
 interface ProjectProps {
   id: number;
@@ -10,21 +11,32 @@ interface ProjectProps {
 }
 
 const Project = (props: ProjectProps) => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-
+  const { variantsImg, variantstext } = ProjectHook();
   return (
-    <section className="project" ref={ref}>
+    <section className="project">
       <div className="container">
-        <img src={props.img} alt="" />
-        <motion.div className="textContainer" style={{ y: y }}>
-          <h2>{props.title}</h2>
-          <p>{props.desc}</p>
-          <button>Sieh Demo</button>
+        <motion.div
+          className="img-container"
+          variants={variantsImg}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <img src={props.img} alt="" />
+        </motion.div>
+        <motion.div
+          className="textContainer"
+          variants={variantstext}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <div className="text-wrapper">
+            <h2>{props.title}</h2>
+            <p>{props.desc}</p>
+
+            <button>Sieh code</button>
+          </div>
         </motion.div>
       </div>
     </section>
