@@ -48,16 +48,17 @@
     background-color: map-get($background-color, secondary-white);
     width: 100%;
     border-radius: 1rem;
+    overflow-y: hidden;
 
     @include respond(phone) {
-      height: 500px;
+      overflow-y: hidden;
     }
   }
 
   ::-webkit-scrollbar {
     height: 5px;
     width: 5px;
-    background: 3F72AF;
+    background: map-get($background-color, primary-white);
     -webkit-border-radius: 1ex;
   }
 

@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond(phone) {
+      height: fit-content;
+    }
 
     h1 {
       position: absolute;
@@ -21,10 +24,6 @@
       margin: auto;
       width: 80%;
       margin: auto;
-      @include respond(phone) {
-        height: 460px;
-        overflow: scroll;
-      }
     }
   }
   img {
