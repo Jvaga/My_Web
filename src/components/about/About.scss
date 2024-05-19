@@ -45,7 +45,7 @@
     list-style: none;
     height: 450px;
     overflow-x: scroll;
-    background-color: map-get($background-color, secondary-white) #dbe2ef;
+    background-color: map-get($background-color, secondary-white);
     width: 100%;
     border-radius: 1rem;
 

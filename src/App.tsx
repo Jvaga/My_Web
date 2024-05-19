@@ -15,13 +15,13 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section className="section" id="Services">
+      <section className="section" id="Über mich">
         <KnowMe />
       </section>
       <section className="section">
         <About />
       </section>
-      <section className="section" id="Skills">
+      <section className="section" id="Kenntnisse">
         <MySkills />
       </section>
       <section className="section">
