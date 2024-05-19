@@ -4,13 +4,8 @@
       @content;
     }
   }
-  @if $breackpoint == tab-port {
+  @if $breackpoint == tablet {
     @media screen and (max-width: 1024px) {
-      @content;
-    }
-  }
-  @if $breackpoint == tab-land {
-    @media screen and (max-width: 75em) {
       @content;
     }
   }

@@ -2,19 +2,19 @@
   {
     "id": 1,
     "title": "E-commerce Food Delivery",
-    "img": "https://plus.unsplash.com/premium_photo-1684785617085-3a875d81920f?q=80&w=2884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "img": "/web.svg",
     "desc": "este proyecto fue hecho con Sass, Typescript, Frame motion y React"
   },
   {
     "id": 1,
     "title": " E-commerce Personal Care",
-    "img": "https://plus.unsplash.com/premium_photo-1684785617085-3a875d81920f?q=80&w=2884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "desc": "este proyecto fue hecho con Sass, Typescript, Frame motion y React,este proyecto fue hecho con Sass, Typescript, Frame motion y React,este proyecto fue hecho con Sass, Typescript, Frame motion y React,este proyecto fue hecho con Sass, Typescript, Frame motion y React,este proyecto fue hecho con Sass, Typescript, Frame motion y React,este proyecto fue hecho con Sass, Typescript, Frame motion y React"
+    "img": "/web.svg",
+    "desc": "este proyecto fue hecho con Sass, Typescript, Frame motion y React"
   },
   {
     "id": 1,
     "title": "E-commerce Art",
-    "img": "https://plus.unsplash.com/premium_photo-1684785617085-3a875d81920f?q=80&w=2884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "img": "/web.svg",
     "desc": "este proyecto fue hecho con Sass, Typescript, Frame motion y React"
   }
 ]

@@ -12,7 +12,7 @@
       font-size: 20px;
       text-align: center;
       padding-bottom: 1rem;
-      @include respond(tab-port) {
+      @include respond(tablet) {
         font-size: 25px;
         padding-bottom: 2rem;
       }
@@ -25,7 +25,7 @@
     img {
       width: 80%;
       border-radius: 0.5rem;
-      @include respond(tab-port) {
+      @include respond(tablet) {
         width: 90%;
       }
       @include respond(phone) {

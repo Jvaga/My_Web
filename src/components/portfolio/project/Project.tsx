@@ -35,7 +35,7 @@ const Project = (props: ProjectProps) => {
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
 
-            <button>Sieh code</button>
+            <button>Demnächst..</button>
           </div>
         </motion.div>
       </div>

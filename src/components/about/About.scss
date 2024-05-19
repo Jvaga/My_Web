@@ -1,5 +1,5 @@
 @import "../../styles/mixins.scss";
-
+@import "../../styles/colors";
 .about {
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include respond(tab-port) {
+    @include respond(tablet) {
       width: 90%;
     }
 
@@ -37,9 +37,7 @@
   }
   .bg {
     stroke: #3f72af;
-
     opacity: 1;
-    color: burlywood;
     overflow: hidden;
   }
   ul {
@@ -47,7 +45,7 @@
     list-style: none;
     height: 450px;
     overflow-x: scroll;
-    background-color: #dbe2ef;
+    background-color: map-get($background-color, secondary-white) #dbe2ef;
     width: 100%;
     border-radius: 1rem;
 
@@ -64,7 +62,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #3f72af;
+    background: map-get($background-color, primary-blue);
     -webkit-border-radius: 1ex;
   }
   li {
@@ -73,7 +71,7 @@
     justify-content: center;
     align-items: center;
     margin: 1px;
-    @include respond(tab-port) {
+    @include respond(tablet) {
       width: 90%;
       height: 100%;
     }

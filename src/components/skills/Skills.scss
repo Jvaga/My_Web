@@ -1,13 +1,14 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/colors";
 .skills {
   width: 80%;
   height: 100%;
   margin: auto;
-  color: #112d4e;
+  color: map-get($text-color, secondary-blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  @include respond(tab-port) {
+  @include respond(tablet) {
     width: 90%;
   }
   @include respond(phone) {
@@ -22,7 +23,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    @include respond(tab-port) {
+    @include respond(tablet) {
       gap: 50px;
     }
     @include respond(phone) {

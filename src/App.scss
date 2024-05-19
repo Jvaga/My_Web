@@ -1,3 +1,5 @@
+@import "./styles/colors.scss";
+
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -10,8 +12,9 @@ html {
 }
 
 body {
-  background-color: #f6f5f5;
-  color: white;
+  background-color: map-get($background-color, secondary-white);
+
+  color: map-get($text-color, primary-white);
   overflow-x: hidden;
 }
 

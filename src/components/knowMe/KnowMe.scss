@@ -1,12 +1,13 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/colors";
 
 .knowMe {
   width: 100%;
   height: 100%;
   position: relative;
   display: flex;
-  color: white;
-  background-color: #112d4e;
+  color: map-get($text-color, primary-white);
+  background-color: map-get($text-color, secondary-blue);
 
   h1 {
     position: relative;
@@ -17,7 +18,7 @@
     height: fit-content;
     z-index: 1;
     text-align: center;
-    @include respond(tab-port) {
+    @include respond(tablet) {
       top: 15%;
     }
 
@@ -38,7 +39,7 @@
     img {
       width: 35%;
       margin: 0 auto;
-      @include respond(tab-port) {
+      @include respond(tablet) {
         width: 100%;
       }
       @include respond(phone) {

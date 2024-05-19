@@ -7,13 +7,13 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <Sidebar />
-        <motion.span
+        <motion.button
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Jhonny Vargas
-        </motion.span>
+          <a href="">Siehe den Code dieser Website hier </a>
+        </motion.button>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/colors";
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: #f6f5f5;
+  background: map-get($background-color, secondary-white);
   position: relative;
 
   .wrapper {
@@ -20,7 +21,7 @@
       position: relative;
       z-index: 5;
 
-      @include respond(tab-port) {
+      @include respond(tablet) {
         height: 35%;
         gap: 30px;
         align-items: center;
@@ -34,9 +35,9 @@
 
       h2 {
         font-size: 30px;
-        color: #3f72af;
+        color: map-get($text-color, primary-blue);
         letter-spacing: 10px;
-        @include respond(tab-port) {
+        @include respond(tablet) {
           font-size: 50px;
         }
         @include respond(phone) {
@@ -46,8 +47,8 @@
 
       h1 {
         font-size: 70px;
-        color: #112d4e;
-        @include respond(tab-port) {
+        color: map-get($text-color, secondary-blue);
+        @include respond(tablet) {
           font-size: 80px;
         }
         @include respond(phone) {
@@ -62,12 +63,13 @@
       font-size: 50vh;
       bottom: -50px;
       white-space: nowrap;
-      color: #3f72af;
+      color: map-get($text-color, primary-blue);
+
       width: 50%;
       font-weight: bold;
       opacity: 0.2;
 
-      @include respond(tab-port) {
+      @include respond(tablet) {
         font-size: 30vh;
         bottom: 30%;
       }
@@ -87,7 +89,7 @@
     z-index: 2;
     display: flex;
 
-    @include respond(tab-port) {
+    @include respond(tablet) {
       height: 70%;
     }
 
@@ -111,7 +113,7 @@
     width: 5%;
     z-index: 50;
 
-    @include respond(tab-port) {
+    @include respond(tablet) {
     }
     @include respond(phone) {
       width: 10%;
