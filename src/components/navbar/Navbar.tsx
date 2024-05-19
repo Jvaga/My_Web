@@ -12,7 +12,9 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <a href="">Siehe den Code dieser Website hier </a>
+          <a href="https://github.com/Jvaga/My_Web" target="_blank">
+            Siehe den Code dieser Website hier{" "}
+          </a>
         </motion.button>
       </div>
     </div>
