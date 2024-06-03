@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "E-commerce Food Delivery",
-    "img": "/web.svg",
-    "desc": "Demnächst"
+    "img": "/fastfood.png",
+    "desc": "This project is a web application for a fast food restaurant built using React, TypeScript, SCSS for styling, Context for state management, and Framer Motion for animations."
   },
   {
     "id": 1,

@@ -35,7 +35,12 @@ const Project = (props: ProjectProps) => {
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
 
-            <button>Demnächst..</button>
+            <button>
+              {" "}
+              <a href="https://github.com/Jvaga/FastBite" target="_blank">
+                Siehe Code
+              </a>
+            </button>
           </div>
         </motion.div>
       </div>
